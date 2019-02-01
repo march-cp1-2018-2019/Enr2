@@ -17,6 +17,7 @@ public class BirthdayApp {
 		try {
 
 			String ans = s.next();
+			//a great place for this close statement would be in a finally block after the catch
 			s.close();
 			System.out.println("Testing if it is your birthday...");
 			String[] parts = ans.split("/");
