@@ -21,13 +21,22 @@ public class AgeCalculator {
 		System.out.println();
 		boolean valid;
 		try {
+			// This is one way to do it but be careful that you check that 
+			// your array parts is not null first before you access an index.
+			// otherwise you may get a NullPointerException.  
+			// What would happen if the user entered a bad date format or used a different
+			// delimeter character other than -
 			String[] parts = dateOfBirthString.split("-");
+			// add here: if(parts!=null && parts.length==3) 
 			int year = Integer.parseInt(parts[0]);
 			int month = Integer.parseInt(parts[1]);
 			int dayOfMonth = Integer.parseInt(parts[2]);
 			valid = true;
+			// You could use the DateTimeFormatter here to parse based on a format
+			// lowercase b here for birthday
 			LocalDate Birthday = LocalDate.of(year, month, dayOfMonth);
-
+			
+			// i like this here
 			if (valid) {
 				// DONE :)
 				System.out.println("\nYour date of birth is " + dtf.format(Birthday));
