@@ -49,6 +49,7 @@ public class GuessNumberApp {
 					System.out.println("\nPlease Type A Number 1-10");
 				}
 			} catch (Exception e) {
+				// very clever, i like this
 				for (int x = 0; x <= 9; x++) {
 					if (nums[x].equals(guess)) {
 						if (x == numString) {
@@ -62,6 +63,8 @@ public class GuessNumberApp {
 					}
 				}
 			}
+			// usually you write this this way:
+            		// if(!leave){
 			if (leave == false) {
 				System.out.print("Try To Guess It Again : ");
 				guess = input.next();
