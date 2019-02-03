@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// TEACHER NOTES: Make sure you include your name at the top of your code
 
 public class GuessNumberApp {
 
@@ -25,12 +26,17 @@ public class GuessNumberApp {
 			System.out.println("Wrong guess. Sorry.");
 		}
 		if (guess < number) {
-			
+			// TEACHER NOTES: don't forget to print too low here
 		} else if (guess > number) {
 			System.out.println("Too high,");
 		} else {
 			System.out.println("You guessed it in !");
 			
+			// TEACHER NOTES: can't have a catch without a try block.
+			// usually the catch is used to explain when something bad or
+			// wrong has happened; not for this situation below.
+			// put your try statement near line 16
+			// this is why your code is not compiling.
 			catch(Exception ex) {
 				System.out.println("You guessed correct. Here is a cookie.");
 				System.out.println("Congrats, you won!");
