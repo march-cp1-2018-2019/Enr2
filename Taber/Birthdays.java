@@ -35,7 +35,10 @@ public class Birthdays {
 		//String birthday = scanner.nextLine();
 		//System.out.println("Your birthday is: " + birthday);
 		
-		
+		// TEACHER NOTES: what is the variable now 
+		// it is not declared anywhere, that is why its not compiling on this line
+		// it doesn't know what 'now' is
+		// try: LocalDate now = LocalDate.now();
 		System.out.println(now);
 		DateTimeFormatter dft = DateTimeFormatter.ofPattern("MMMM dd, YYYY");
 		System.out.println(dft.format(now));
@@ -46,6 +49,7 @@ public class Birthdays {
 		String birthday = scanner.nextLine();
 		System.out.println("Your birthday is: " + birthday);
 		
+		// TEACHER NOTES: we can also use the DateTimeFormatter here to parse the date. 
 		String[] parts = birthday.split("/");
 		String month = parts[0];
 		String dayOfMonth = parts[1];
