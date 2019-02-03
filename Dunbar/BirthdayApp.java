@@ -1,4 +1,4 @@
-package chap10;
+package dates;
 
 // Noah 1/29/2019
 
@@ -10,6 +10,7 @@ public class BirthdayApp{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
 
+    // TEACHER NOTES: perhaps tell the user the input format in this prompt.
     System.out.print("What is your birthday? ");
     String birthday = scanner.nextLine();
 
