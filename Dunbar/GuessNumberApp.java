@@ -1,4 +1,4 @@
-package chap11;
+package dates;
 
 // Noah 1/29/2019
 
@@ -46,6 +46,11 @@ public class GuessNumberApp{
       if(guess == num){
         System.out.println("Correct!");
       }else{
+    	  // TEACHER NOTES: one thing you might consider added here is
+    	  // some feedback to the user...was their guess too high or too low
+    	  // compare to the random number num.
+    	  // You could also let the keep guessing until they get it right and 
+    	  // then display the number of guesses it took them to get it right.
         System.out.println("That's not right.");
       }
     }
