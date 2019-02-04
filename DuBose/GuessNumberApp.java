@@ -37,7 +37,10 @@ public class GuessNumberApp {
 					System.out.println("Dude come on now.");
 					System.out.println("Dose " + guess + " look like its in between 1 and 10?");
 					System.out.println("No, I didn't think so either.");
-				}		
+				} 
+                // TEACHER NOTES: what if the users guess was exactly 1 or 10?
+                // using the greater than and less than signs here do not allow the user
+                // to enter this else block.  Try instead >=  and  <=		
 				else if (guess > 1 && guess < LIMIT) {
 				
 					if (guess < number) {
